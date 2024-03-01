@@ -1,4 +1,4 @@
-package com.example.springwebfluxmongogbissue;
+package com.example.reactivegridfsissue;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,12 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import reactor.core.publisher.Hooks;
 
 @SpringBootApplication
-public class SpringWebfluxMongogbIssueApplication {
+public class ReactiveGridFsIssueApplication {
 
     public static void main(String[] args) {
         Hooks.enableAutomaticContextPropagation();
 
-        SpringApplication.run(SpringWebfluxMongogbIssueApplication.class, args);
+        SpringApplication.run(ReactiveGridFsIssueApplication.class, args);
     }
 
 }

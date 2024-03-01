@@ -1,7 +1,11 @@
-# spring-boot-webflux-mongodb-tracing-issue-4-10-2023
+# Reactive GridFS missing trace-id issue
+
+This is a minimal example for the issue XXX
 
 Steps to reproduce:
 
-1. Remove records from "entity" collection if any exists.
-2. Call http://localhost:8080/case1/1 or http://localhost:8080/case2/1
-3. Check logs
+1. Start MongoDB with Docker using the command: ``docker run --rm -p "27017:27017" mongo:7.0.6``.
+2. Launch the application ``ReactiveGridFsIssueApplication``.
+3. Access the endpoint at http://localhost:8080/workingTraceIdButAllElementsInMemory.
+4. Access the endpoint at http://localhost:8080/notWorkingTraceIdButOnlyFewElementsInMemory. 
+5. Watch the logs and trace-ids

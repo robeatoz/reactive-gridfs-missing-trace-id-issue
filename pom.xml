@@ -5,22 +5,17 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.5</version>
+		<version>3.2.3</version>
 		<relativePath/>
 		<!-- lookup parent from repository -->
 	</parent>
 
 	<groupId>com.example</groupId>
-	<artifactId>spring-webflux-mongogb-issue</artifactId>
+	<artifactId>reactive-gridfs-missing-trace-id-issue</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
-	<name>spring-webflux-mongogb-issue</name>
-	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>17</java.version>
-
-		<micrometer.context.propagation.version>1.0.2</micrometer.context.propagation.version>
 	</properties>
 
 	<dependencies>
@@ -51,13 +46,7 @@
 
 		<dependency>
 			<groupId>io.micrometer</groupId>
-			<artifactId>micrometer-tracing-bridge-otel</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>io.micrometer</groupId>
-			<artifactId>context-propagation</artifactId>
-			<version>${micrometer.context.propagation.version}</version>
+			<artifactId>micrometer-tracing-bridge-brave</artifactId>
 		</dependency>
 
 		<dependency>

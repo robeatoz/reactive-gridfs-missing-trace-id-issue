@@ -1,4 +1,4 @@
-package com.example.springwebfluxmongogbissue.model;
+package com.example.reactivegridfsissue.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
