@@ -1,6 +1,8 @@
 # Reactive GridFS missing trace-id issue
 
-This is a minimal example for the issue https://github.com/spring-projects/spring-data-mongodb/issues/4650
+This is a minimal example for these issues: 
+- https://jira.mongodb.org/browse/JAVA-5345
+- https://github.com/spring-projects/spring-data-mongodb/issues/4650
 
 Steps to reproduce:
 
